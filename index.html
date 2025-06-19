@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>โปรไฟล์ของฉัน</title>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        /* CSS พื้นฐานสำหรับหน้าโปรไฟล์ */
+        body {
+            font-family: 'Kanit', sans-serif; /* ใช้ฟอนต์ Kanit หรือฟอนต์ที่คุณชอบ */
+            margin: 0;
+            padding: 0;
+            background-color: #f4f7f6; /* สีพื้นหลังอ่อนๆ */
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 30px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            text-align: center; /* จัดให้อยู่ตรงกลางสำหรับส่วนหลัก */
+        }
+
+        .profile-header {
+            margin-bottom: 30px;
+        }
+
+        .profile-picture {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 5px solid #007bff; /* สีขอบรูปโปรไฟล์ */
+            margin-bottom: 20px;
+            display: block; /* ทำให้รูปอยู่ตรงกลาง */
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .profile-header h1 {
+            color: #007bff; /* สีชื่อ */
+            margin-bottom: 5px;
+            font-size: 2.5em;
+        }
+
+        .profile-header p.tagline {
+            font-size: 1.2em;
+            color: #555;
+            margin-bottom: 20px;
+        }
+
+        .contact-info {
+            margin-top: 20px;
+            font-size: 1.1em;
+        }
+
+        .contact-info a {
+            color: #007bff;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+
+        .section {
+            text-align: left; /* จัดข้อความให้อยู่ทางซ้ายสำหรับส่วนเนื้อหา */
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid #eee;
+        }
+
+        .section h2 {
+            color: #007bff;
+            margin-bottom: 20px;
+            font-size: 1.8em;
+            text-align: center; /* หัวข้อส่วนต่างๆ ให้อยู่ตรงกลาง */
+        }
+
+        .section ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .section ul li {
+            background-color: #e9f3ff; /* สีพื้นหลังของแต่ละรายการ */
+            margin-bottom: 10px;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+        }
+
+        .section ul li strong {
+            color: #333;
+        }
+
+        .skills-grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .skill-item {
+            background-color: #007bff;
+            color: white;
+            padding: 10px 15px;
+            border-radius: 20px;
+            font-size: 0.9em;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 50px;
+            padding-top: 20px;
+            border-top: 1px solid #eee;
+            color: #777;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="profile-header">
+            <img src="https://via.placeholder.com/150" alt="รูปโปรไฟล์" class="profile-picture">
+            
+            <h1>[ชื่อ-นามสกุลของคุณ]</h1>
+            
+            <p class="tagline">[คำโปรย: เช่น นักพัฒนาซอฟต์แวร์ผู้หลงใหลใน AI / นักออกแบบกราฟิกสร้างสรรค์]</p>
+
+            <div class="contact-info">
+                <a href="mailto:your.email@example.com">your.email@example.com</a>
+                <a href="https://linkedin.com/in/yourprofile" target="_blank">LinkedIn</a>
+                <a href="https://github.com/yourusername" target="_blank">GitHub</a>
+                </div>
+        </header>
+
+        <section class="section about-me">
+            <h2>เกี่ยวกับฉัน</h2>
+            <p>
+                [เขียนแนะนำตัวคุณเองอย่างน้อย 2-3 บรรทัด]
+            </p>
+        </section>
+
+        <section class="section skills">
+            <h2>ทักษะและความสามารถ</h2>
+            <div class="skills-grid">
+                <span class="skill-item">HTML</span>
+                <span class="skill-item">CSS</span>
+                <span class="skill-item">JavaScript</span>
+                <span class="skill-item">Python</span>
+                <span class="skill-item">UI/UX Design</span>
+                <span class="skill-item">Graphic Design</span>
+                </div>
+        </section>
+
+        <section class="section experience">
+            <h2>ประสบการณ์</h2>
+            <ul>
+                <li>
+                    <strong>[ตำแหน่งงาน/บทบาท]</strong> | [ชื่อบริษัท/องค์กร] <br>
+                    [เดือน ปี ที่เริ่มต้น] - [เดือน ปี ที่สิ้นสุด หรือ ปัจจุบัน]<br>
+                    - [หน้าที่ความรับผิดชอบ หรือ ผลงานเด่น 1]<br>
+                    - [หน้าที่ความรับผิดชอบ หรือ ผลงานเด่น 2]
+                </li>
+                <li>
+                    <strong>[ตำแหน่งงาน/บทบาท]</strong> | [ชื่อบริษัท/องค์กร] <br>
+                    [เดือน ปี ที่เริ่มต้น] - [เดือน ปี ที่สิ้นสุด]<br>
+                    - [หน้าที่ความรับผิดชอบ หรือ ผลงานเด่น 1]<br>
+                    - [หน้าที่ความรับผิดชอบ หรือ ผลงานเด่น 2]
+                </li>
+            </ul>
+        </section>
+
+        <section class="section education">
+            <h2>การศึกษา</h2>
+            <ul>
+                <li>
+                    <strong>[ระดับการศึกษา]</strong>, [สาขาวิชา/คณะ]<br>
+                    [ชื่อสถาบันการศึกษา], [เมือง, ประเทศ]<br>
+                    ปีที่สำเร็จการศึกษา: [ปี พ.ศ./ค.ศ.]
+                </li>
+                </ul>
+        </section>
+
+        <section class="section interests">
+            <h2>ความสนใจและงานอดิเรก</h2>
+            <p>
+                [เขียนความสนใจหรืองานอดิเรกของคุณ]
+            </p>
+        </section>
+
+        <footer class="footer">
+            <p>&copy; 2025 [ชื่อของคุณ]. สงวนลิขสิทธิ์.</p>
+        </footer>
+    </div>
+</body>
+</html>
